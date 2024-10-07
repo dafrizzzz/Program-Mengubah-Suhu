@@ -1,0 +1,25 @@
+package main
+
+import ("fmt")
+
+func main() {
+	var celsi1, celsi2, celsi3 float32
+	
+	fmt.Print("masukan suhu celcius pertama: ")
+	fmt.Scanln(&celsi1)
+	fmt.Print("masukan suhu celcius kedua: ")
+	fmt.Scanln(&celsi2)
+	fmt.Print("masukan suhu celcius ketiga: ")
+	fmt.Scanln(&celsi3)
+
+	jawaban1 := ( celsi1 - 32 ) * 5 / 9
+	fmt.Println("suhu pertama dalam satuan celcius adalah", jawaban1, "℃")
+	jawaban2 := ( celsi2 - 32 ) * 5 / 9
+	fmt.Println("suhu kedua dalam satuan celcius adalah", jawaban2, "℃")
+	jawaban3 := ( celsi3 - 32 ) * 5 / 9
+	fmt.Println("suhu ketiga dalam satuan celcius adalah", jawaban3, "℃")
+
+	fmt.Println("jadi, suhuh dalam satuan celcius pertama adalah", jawaban1,"℃",
+	 "selanjutnya suhu dalam satuan celcius kedua adalah", jawaban2,"℃",
+	  "dan suhu dalam satuan celcius ketiga adalah", jawaban3,"℃")
+}
